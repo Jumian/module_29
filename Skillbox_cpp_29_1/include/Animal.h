@@ -44,7 +44,5 @@ public:
 			}
 		}
 	}
-	void voice() {
-		std::cout << "Bark! \n";
-	}
+	void voice() { std::cout << "Bark! \n";	}
 };

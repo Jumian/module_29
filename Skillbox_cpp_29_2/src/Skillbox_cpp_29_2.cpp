@@ -12,5 +12,10 @@ int main()
 	printParams(cr);
 	Triangle* tr = new Triangle(25.6, 85.7, 95);
 	printParams(tr);
+
+
+	delete tr;
+	delete cr;
+	delete sq;
 	return 0;
 }
