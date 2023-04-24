@@ -7,7 +7,9 @@
 #include <numbers>
 
 struct BoundingBoxDimensions {
+
 	double height=0, width=0;
+public:
 	BoundingBoxDimensions() {}
 	BoundingBoxDimensions(double _height, double _width) {
 		height = _height; width = _width;
@@ -22,7 +24,7 @@ public:
 	Shape() {};
 	const std::map<std::string, double> getParams() { return params; }
 	virtual double square() = 0;
-	virtual std::string type()=0;
+	virtual std::string type() = 0 ;
 	virtual BoundingBoxDimensions dimensions() = 0;
 };
 

@@ -1,6 +1,5 @@
 ﻿// Skillbox_cpp_29_2.cpp: определяет точку входа для приложения.
 //
-#include "Shape.h"
 #include "Circle.h"
 #include "Square.h"
 #include "Triangle.h"

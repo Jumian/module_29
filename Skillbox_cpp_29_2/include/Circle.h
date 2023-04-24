@@ -1,14 +1,17 @@
 #pragma once
+
+#define _USE_MATH_DEFINES
+#include <math.h>
 #include "Shape.h"
 
-class Circle : virtual public Shape {
+class Circle :  public Shape {
 protected:
 
 public:
 	explicit Circle(double _radius) {
 		params["radius"] = _radius;
 	}
-	double square();
-	std::string type();
-	BoundingBoxDimensions dimensions();
+	double square() override;
+	std::string type() override;
+	BoundingBoxDimensions dimensions() override;
 };
